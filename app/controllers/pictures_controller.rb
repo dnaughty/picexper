@@ -36,8 +36,6 @@ class PicturesController < ApplicationController
 
   # PATCH/PUT /pictures/1 or /pictures/1.json
   def update
-
-    PictureAttachmentService.attach(@image, params['image'])
     respond_to do |format|
       if @picture.update(picture_params)
         format.html { redirect_to picture_url(@picture), notice: "Picture was successfully updated." }

@@ -5,7 +5,7 @@
 
 require("@rails/ujs").start()
 require("turbolinks").start()
-require("packs/webcam")
+
 require("@rails/activestorage").start()
 require("channels")
 
